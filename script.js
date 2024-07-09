@@ -1,11 +1,23 @@
-document.getElementById('summarize-button').addEventListener('click', () => {
-    const inputText = document.getElementById('input-text').value;
+// Define a translation object
+const translationDict = {
+    "hello": "hola",
+    "world": "mundo",
+    "javascript": "JavaScript",
+    "translator": "traductor",
+    "example": "ejemplo"
+};
 
-    if (inputText.trim()) {
-        // Dummy summarization logic for now
-        const summary = inputText.split(' ').slice(0, 10).join(' ') + '...';
-        document.getElementById('summary-output').innerText = summary;
-    } else {
-        document.getElementById('summary-output').innerText = 'Please enter some text to summarize.';
+// Function to translate text
+function translate() {
+    let inputText = document.getElementById("inputText").value;
+    let words = inputText.toLowerCase().split(" ");
+    let translatedWords = [];
+
+    for (let word of words) {
+        let translatedWord = translationDict[word] || word;
+        translatedWords.push(translatedWord);
     }
-});
+
+    let translatedSentence = translatedWords.join(" ");
+    document.getElementById("output").textContent = translatedSentence;
+}

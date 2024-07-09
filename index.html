@@ -3,27 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summarizing Website</title>
+    <title>Simple Translator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <!-- SVG content goes here -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="332" height="132" viewBox="0 0 332 132" fill="none">
-                <rect y="33" width="332" height="60" rx="6" fill="white" fill-opacity="0.08"/>
-                <rect x="0.25" y="33.25" width="331.5" height="59.5" rx="5.75" stroke="white" stroke-opacity="0.1" stroke-width="0.5"/>
-                <rect y="103" width="95" height="29" rx="5" fill="white" fill-opacity="0.08"/>
-                <path d="M19.8477 121.164C19.3516 121.164 18.9023 121.072 18.5 120.889C18.1016 120.705 17.7578 120.457 17.4688 120.143C17.1797 119.825 16.9609 119.459 16.8125 119.043C16.6641 118.627 16.5898 118.176 16.5898 117.689C16.5898 117.202 16.6641 116.748 16.8125 116.326C16.9609 115.904 17.1797 115.543 17.4688 115.243C17.7578 114.943 18.1016 114.712 18.5 114.55C18.9023 114.388 19.3516 114.307 19.8477 114.307C20.3711 114.307 20.8203 114.388 21.1953 114.55C21.5742 114.712 21.9102 114.943 22.2031 115.243C22.4961 115.543 22.7266 115.904 22.8945 116.326C23.0664 116.748 23.1523 117.202 23.1523 117.689C23.1523 118.176 23.0664 118.627 22.8945 119.043C22.7266 119.459 22.4961 119.825 22.2031 120.143C21.9102 120.457 21.5742 120.705 21.1953 120.889C20.8203 121.072 20.3711 121.164 19.8477 121.164ZM19.8477 120.12C20.332 120.12 20.7422 120.002 21.0781 119.766C21.4141 119.527 21.6641 119.207 21.8281 118.805C21.9961 118.403 22.0801 117.973 22.0801 117.515C22.0801 117.066 21.9961 116.645 21.8281 116.253C21.6641 115.856 21.4141 115.54 21.0781 115.305C20.7422 115.066 20.332 114.947 19.8477 114.947C19.3672 114.947 18.9609 115.066 18.6289 115.305C18.2969 115.54 18.0469 115.856 17.8789 116.253C17.7109 116.645 17.626 117.066 17.626 117.515C17.626 117.973 17.7109 118.403 17.8789 118.805C18.0469 119.207 18.2969 119.527 18.6289 119.766C18.9609 120.002 19.3672 120.12 19.8477 120.12Z" fill="white" fill-opacity="0.45"/>
-                <path d="M15.1523 109H16.5352L21.4062 118.05H21.5508L26.4492 109H27.8125L22.2031 119.5H20.7773L15.1523 109Z" fill="white" fill-opacity="0.45"/>
-            </svg>
-        </header>
-        <main class="main-content">
-            <textarea id="input-text" placeholder="Enter text to summarize..."></textarea>
-            <button id="summarize-button">Summarize</button>
-            <div id="summary-output"></div>
-        </main>
+        <h1>Simple Translator</h1>
+        <textarea id="inputText" placeholder="Enter text to translate..."></textarea>
+        <button onclick="translate()">Translate</button>
+        <div id="output"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
